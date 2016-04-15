@@ -1,0 +1,83 @@
+object frmLoja: TfrmLoja
+  Left = 237
+  Height = 157
+  Top = 111
+  Width = 434
+  Caption = 'Comercio do Marlon'
+  ClientHeight = 157
+  ClientWidth = 434
+  LCLVersion = '1.4.0.4'
+  object lblValor: TLabel
+    Left = 30
+    Height = 15
+    Top = 36
+    Width = 92
+    Caption = 'Valor do produto:'
+    ParentColor = False
+  end
+  object lblNum: TLabel
+    Left = 30
+    Height = 15
+    Top = 72
+    Width = 112
+    Caption = 'Numero de parcelas: '
+    ParentColor = False
+  end
+  object txtValor: TEdit
+    Left = 128
+    Height = 23
+    Top = 28
+    Width = 291
+    OnChange = txtValorChange
+    TabOrder = 0
+  end
+  object txtNum: TEdit
+    Left = 144
+    Height = 23
+    Top = 64
+    Width = 275
+    TabOrder = 1
+  end
+  object lblPrest: TLabel
+    Left = 40
+    Height = 15
+    Top = 112
+    Width = 102
+    Caption = 'Valor da prestação: '
+    ParentColor = False
+  end
+  object lblTotal: TLabel
+    Left = 152
+    Height = 30
+    Top = 96
+    Width = 48
+    Caption = '0,00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -21
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnCalcular: TButton
+    Left = 256
+    Height = 25
+    Top = 101
+    Width = 75
+    Caption = 'Calcular'
+    OnClick = btnCalcularClick
+    TabOrder = 2
+  end
+  object btnLimpar: TButton
+    Left = 344
+    Height = 25
+    Top = 101
+    Width = 75
+    Caption = 'Limpar'
+    OnClick = btnLimparClick
+    TabOrder = 3
+  end
+end
